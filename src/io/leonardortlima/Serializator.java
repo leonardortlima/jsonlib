@@ -76,11 +76,6 @@ public class Serializator {
             return builder;
         }
 
-        if(InstanceChecker.isArray(value)) {
-            appendArrayValue(builder, value);
-            return builder;
-        }
-
         if(InstanceChecker.isCollection(value)) {
             appendCollection(builder, value);
             return builder;
